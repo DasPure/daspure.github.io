@@ -12,5 +12,108 @@
     <title>Creepy Crawlies!</title>
 
     <style>
+         body {
+            font: 1.2em/1.5 system-ui, sans-serif;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            color: #b00000;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+
+        header section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        h1 {
+            grid-column: 1 / -1;
+        }
+
+        video {
+            grid-column: 2;
+            grid-row: 2;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        header p {
+            grid-column: 1;
+            grid-row: 2;
+            margin: 0;
+        }
+
+        main section {
+            display: flow-root;
+            margin-top: 30px;
+        }
+
+        figure {
+            float: right;
+            margin: 0 0 20px 20px;
+            padding: 20px;
+            background-color: orange;
+            border: 1px solid black;
+        }
+
+        figure img {
+            display: block;
+            object-fit: cover;
+        }
+
+        figcaption {
+            max-width: 250px;
+            margin-top: 8px;
+            font-size: 0.75em;
+        }
+
+        .copyright {
+            font-size: 0.75em;
+        }
+
+        @media (max-width: 700px) {
+            header section {
+                display: block;
+            }
+
+            header p {
+                margin-top: 15px;
+            }
+
+            figure {
+                float: none;
+                width: fit-content;
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
 </head>
+
+<body>
+    <header>
+        
+    </header>
+</body>
 </html>
