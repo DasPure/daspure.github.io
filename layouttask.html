@@ -66,6 +66,71 @@
             text-decoration: none;
             padding: 0.5em 1em;
         }
-        
+        nav a:hover,
+        nav a:focus {
+            background-color: #444;
+        }
+
+        /* Arrange the photographs into two equal columns. */
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 5px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .photos img {
+            width: 100%;
+        }
+
+        /* Let article text wrap beside and below the image. */
+        .feature {
+            width: 200px;
+            float: left;
+            margin: 8px 30px 20px 0;
+        }
+    </style>
 </head>
+<body>
+    <div class="logo">My exciting website!</div>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main class="grid">
+        <article>
+            <h1>An Exciting Blog Post</h1>
+
+            <img
+                src="https://mdn.github.io/learning-area/css/css-layout/fundamental-layout-comprehension/images/square6.jpg"
+                alt="Hot air balloon"
+                class="feature">
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis non justo at erat egestas porttitor vel nec tortor.
+                Mauris in molestie ipsum. Vivamus diam elit, ornare ornare
+                nisi vitae, ullamcorper pharetra ligula. In vel lacus quis
+                nulla sollicitudin pellentesque.
+            </p>
+
+            <p>
+                Nunc vitae eleifend odio, eget tincidunt sem. Cras et
+                varius justo. Nulla sollicitudin quis urna vitae efficitur.
+                Pellentesque hendrerit molestie arcu sit amet lacinia.
+                Vivamus vulputate sed purus at eleifend. Phasellus malesuada
+                sem vel libero hendrerit, sed finibus massa porta.
+                Vestibulum luctus scelerisque libero, sit amet sagittis
+                eros sollicitudin ac. Class aptent taciti sociosqu ad litora
+                torquent per conubia nostra, per inceptos himenaeos.
+            </p>
 </html>
